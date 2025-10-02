@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Splide Slideshow</title>
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+        <h1 class="tropi center-title">Slideshow using Splide.js</h1>
+        
+        <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+		        <ul class="splide__list">
+			        <li class="splide__slide">
+				        <img src="./img/unsplash1.jpg" alt="Space image 1">
+			        </li>
+			        <li class="splide__slide">
+				        <img src="./img/unsplash2.jpg" alt="Space image 2">
+			        </li>
+			        <li class="splide__slide">
+				         <img src="./img/unsplash3.jpg" alt="Space image 3">
+			        </li>
+			        <li class="splide__slide">
+				         <img src="./img/unsplash4.jpg" alt="Space image 4">
+			        </li>
+			        <li class="splide__slide">
+				         <img src="./img/unsplash5.jpg" alt="Space image 5">
+			        </li>
+			        <li class="splide__slide">
+				         <img src="./img/unsplash6.jpg" alt="Space image 6">
+			        </li>
+			        <li class="splide__slide">
+				         <img src="./img/unsplash7.jpg" alt="Space image 7">
+			        </li>
+		        </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src="./js/splide.min.js"></script>
+    <script>
+
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-carousel', {
+                heightRatio: 0.5,
+            } ).mount();
+        } );
+    </script>
+  </body>
+</html>
